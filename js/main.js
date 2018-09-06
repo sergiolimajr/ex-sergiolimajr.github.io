@@ -35,7 +35,7 @@ fetch(URL_EMERGENCIA)
 			collection.innerHTML = `${a}`;
 			a.innerHTML = `${service.name}`;
 			
-			a.href = '../partials/serviceContent.html';
+			a.href = '../../dist/view/serviceContent.html';
 			a.className = 'collection-item waves-effect black-text';
 			collection.className = 'collection';
 
@@ -66,7 +66,7 @@ fetch(URL_URGENCIA)
 			collection.innerHTML = `${a}`;
 			a.innerHTML = `${service.name}`;
 			
-			a.href = '../partials/serviceContent.html';
+			a.href = '../../dist/view/serviceContent.html';
 			a.className = 'collection-item waves-effect black-text';
 			collection.className = 'collection';
 			

@@ -1,5 +1,5 @@
-var dataCacheName = 'servicesCatalog-v1.2';
-var cacheName = 'services-catalog-1.2';
+var dataCacheName = 'servicesCatalog-v1.0.3';
+var cacheName = 'services-catalog-1.0.3';
 var filesToCache = [
 '/',
 '/index.html',
@@ -9,6 +9,7 @@ var filesToCache = [
 '/dist/view/saude.html',
 '/dist/view/servicos.html',
 '/dist/view/urgencia.html',
+'/dist/view/serviceContent.html',
 '/icons/MaterialIcons-Regular.ttf',
 '/img/48.png',
 '/img/72.png',

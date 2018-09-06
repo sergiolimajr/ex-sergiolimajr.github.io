@@ -1,66 +1,3 @@
-/*	
-var map, marker, infowindow;
-
-// Gerar o mapa
-
-function myMap() {
-	map = new google.maps.Map(document.getElementById('map'), {
-		center: {lat: -15, lng: -55},
-		zoom: 5
-	});
-
-	// Cria um Ponto com animação de Drop
-
-	marker = new google.maps.Marker({
-		map: map,
-		animation: google.maps.Animation.DROP
-	});
-
-	// Cria um evento no Ponto para dar zoom e manter o ponto no centro do mapa de acordo com a coordenada
-
-	marker.addListener('click', function() {
-		map.setZoom(15);
-		map.setCenter(marker.getPosition());
-	});
-
-	// Criar um popup com dados que desejamos informar
-	// No meu caso, as coordenadas do ponto atual
-
-	infowindow = new google.maps.InfoWindow({
-		content: `<h3>Minhas coordenadas: </h3> ${marker.getPosition()}`
-	});
-
-	marker.addListener('mouseover', function() {
-		infowindow.open(map, marker);
-	});
-
-	
-		Pede permissão ao usuário atraves do navegador para usar GPS
-		Pega a posição através da LAT e LNG
-		Adiciona o ponto criado anteriormente no mapa.
-	 
-
-	if (navigator.geolocation) {
-		navigator.geolocation.getCurrentPosition(function(position) {
-			var pos = {
-				lat: position.coords.latitude,
-				lng: position.coords.longitude
-			};
-
-			marker.setPosition(pos);
-			map.setCenter(pos);
-
-		}, function() {
-			handleLocationError(true, marker, map.getCenter());
-		});
-	
-	} else {
-		// Browser doesn't support Geolocation
-   	handleLocationError(false, marker, map.getCenter());
-	}		
-}
-*/
-
 // Service Worker Registration
 
 if (navigator.serviceWorker) {
@@ -98,7 +35,7 @@ fetch(URL_EMERGENCIA)
 			collection.innerHTML = `${a}`;
 			a.innerHTML = `${service.name}`;
 			
-			a.href = '../partials/serviceContent.html';
+			a.href = '../../dist/view/serviceContent.html';
 			a.className = 'collection-item waves-effect black-text';
 			collection.className = 'collection';
 
@@ -129,7 +66,7 @@ fetch(URL_URGENCIA)
 			collection.innerHTML = `${a}`;
 			a.innerHTML = `${service.name}`;
 			
-			a.href = '../partials/serviceContent.html';
+			a.href = '../../dist/view/serviceContent.html';
 			a.className = 'collection-item waves-effect black-text';
 			collection.className = 'collection';
 			

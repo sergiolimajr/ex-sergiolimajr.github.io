@@ -1,14 +1,14 @@
-var dataCacheName = 'servicesCatalog-v1.1';
-var cacheName = 'services-catalog-1.1';
+var dataCacheName = 'servicesCatalog-v1.2';
+var cacheName = 'services-catalog-1.2';
 var filesToCache = [
 '/',
 '/index.html',
-'/js/main.js',
-'/js/script.js',
-'/js/vendor/jquery.min.js',
-'/js/vendor/materialize.min.js',
-'/css/style.css',
-'/icons/material.css',
+'/dist/css/styles.min.css',
+'/dist/js/scripts.min.js',
+'/dist/view/emergencia.html',
+'/dist/view/saude.html',
+'/dist/view/servicos.html',
+'/dist/view/urgencia.html',
 '/icons/MaterialIcons-Regular.ttf',
 '/img/48.png',
 '/img/72.png',
@@ -17,10 +17,6 @@ var filesToCache = [
 '/img/168.png',
 '/img/192.png',
 '/img/512.png',
-'partials/emergencia.html',
-'partials/saude.html',
-'partials/servicos.html',
-'partials/urgencia.html',
 ];
 
 self.addEventListener('install', function(e) {

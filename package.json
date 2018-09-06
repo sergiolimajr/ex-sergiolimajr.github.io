@@ -1,0 +1,37 @@
+{
+  "name": "sergiolimajr.github.io",
+  "version": "1.0.0",
+  "description": "Catálogo de Serviços utilizando dados abertos",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sergiolimajr/sergiolimajr.github.io.git"
+  },
+  "keywords": [
+    "javascript",
+    "html",
+    "css",
+    "python"
+  ],
+  "author": "Sérgio Júnior",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sergiolimajr/sergiolimajr.github.io/issues"
+  },
+  "homepage": "https://github.com/sergiolimajr/sergiolimajr.github.io#readme",
+  "devDependencies": {
+    "event-stream": "^3.3.5",
+    "gulp": "^3.9.1",
+    "gulp-clean": "^0.4.0",
+    "gulp-clean-css": "^3.10.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-htmlmin": "^4.0.0",
+    "gulp-jshint": "^2.1.0",
+    "gulp-uglify-es": "^1.0.4",
+    "jshint": "^2.9.6",
+    "run-sequence": "^2.2.1"
+  }
+}
